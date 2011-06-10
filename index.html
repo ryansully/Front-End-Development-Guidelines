@@ -22,25 +22,25 @@
 		</div>
 	</div>
 	<div id="mainContainer">
-		<h1>Accessibility</h1>
-		<div class="entry">
+		<h1 id="accessiblitySection">Accessibility</h1>
+		<div id="accessibilityDoctype" class="entry">
 			<h2>What's Up, DOCTYPE?</h2>
-			<p>The absence of a DOCTYPE is a crime punishable by death. You may have relied on the following DOCTYPE in the past, but it's important to know that this is now being superceded by a leaner and meaner snippet.</p>
+			<p>The absence of a DOCTYPE is a crime punishable by death. You may have relied on the following DOCTYPE in the past, but it's important to know that this is now being superseded by a leaner and meaner snippet.</p>
 			<pre class="brush: xml;  toolbar: false; gutter: false;">
 				&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 					"http://w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 			</pre>
 			<p>Ideally, the HTML5 DOCTYPE should be used. It's supported in all modern browsers, and throws IE6 and IE7 into standards mode. <a href="http://ejohn.org/blog/html5-doctype/" target="_blank">Source</a>.</p>
-			<pre class="brush: xml;  toolbar: false; gutter: false;">
+			<pre" class="brush: xml;  toolbar: false; gutter: false;">
 				&lt;!DOCTYPE html>
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="accessibilitySemanticMarkup" class="entry">
 			<h2>Write Valid Semantic Markup</h2>
-			<p>Writing websites with clean, semantic HTML is something we wish we could always do. Sometimes we find ourselves limited by the way pages were setup by our predecessors, or sometimes we're coding a HTML email. The validity of the HTML should never be compromised, even if to solve a browser specific bug.</p>
+			<p>Writing websites with clean, semantic HTML is something we wish we could always do. Sometimes we find ourselves limited by the way pages were setup by our predecessors, or sometimes we're coding an HTML email. The validity of the HTML should never be compromised, even if to solve a browser specific bug.</p>
 			<p>Headings should be heirarchically created from <code>&lt;h1&gt;</code> onwards, paragraphs should always be in <code>&lt;p&gt;</code> tags and so on and so forth. If you write semantic HTML, the resultant page will be cleaner, lighter and easily parsed by search engine spiders. This is one of the simplest SEO fixes you can undertake.</p>
 			<h3>Which do you think looks cleaner, this?:</h3>
-			<pre class="brush: xml;  toolbar: false; gutter: false;">
+			<pre" class="brush: xml;  toolbar: false; gutter: false;">
 				&lt;span class="sectionHeading">A Heading&lt;/span>
 				&lt;br /> &lt;br />
 				Lorem ipsum dolor sit amet. ...
@@ -54,7 +54,7 @@
 				&lt;/p>
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="accessibilityMicroformats" class="entry">
 			<h2>Use Microformats</h2>
 			<p>Microformats are a way of making contact information machine readable. hCard classes (not vCard) are used to define the type of content contained within elements. These are then extracted or highlighted by the browser.</p>
 			<pre class="brush: xml;  toolbar: false; gutter: false;">
@@ -66,26 +66,26 @@
 			<p>If you were to navigate to a page that uses this, you would notice that a program like Skype will easily detect what numbers on the page are phone numbers. Mobile Safari does something similar on iOS devices.</p>
 			<p>For more information: <a href="http://microformats.org/wiki/hcard" target="_blank">http://microformats.org/wiki/hcard</a></p>
 		</div>
-		<div class="entry">
+		<div id="accessibilityAltText" class="entry">
 			<h2>Images Need &lsquo;Alt&rsquo; Text</h2>
-			<p>The <code>&lt;img&gt;</code> tag requires <code>alt</code> text to both validate and meet accessibility guidelines. The text in the <code>alt</code> attribute should be descriptive of what the image shows, or is trying to achieve, unless of the course the image is not critical.</p>
+			<p>The <code>&lt;img&gt;</code> tag requires <code>alt</code> text to both validate and meet accessibility guidelines. The text in the <code>alt</code> attribute should be descriptive of what the image shows, or is trying to achieve, unless of course the image is not critical.</p>
 			<p>If the image is of a list bullet or other trivial icons, it is recommended to simply leave the <code>alt</code> attribute empty, but still present. A screenreader will then ignore it, as opposed to having to read out "bullet" 20 times.</p>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
-				&lt;img src="dog.gif" alt="Fido and I at the park!" />
+				&lt;img src="dog.gif" alt="Fido and I at the park!" /> 
 				&lt;!-- good, descriptive -->
-
+			
 				&lt;img src="bullet.gif" alt="bullet" />
 				&lt;!-- bad, as silly as it seems -->
-
+				
 				&lt;img src="bullet.gif" alt="" />
 				&lt;!-- good -->
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="accessibilityTables" class="entry">
 			<h2>Use Tables for Tabular Data Only</h2>
 			<p>Tables should only ever be used for the presentation of tabular data. The only exception is when composing HTML email, in which a table is almost the only thing supported by soul crushing email clients.</p>
 			<p>
-				For accessibility, table headers should always be presented using <code>&lt;th&gt;</code> elements. In .NET datagrids, this can be enabled by setting <code>showAccessibleHeader</code> to true.
+				For accessibility, table headers should always be presented using <code>&lt;th&gt;</code> elements. In .NET datagrids, this can be enabled by setting <code>showAccessibleHeader</code> to true. 
 				Remember to also set <code>cellpadding</code>, <code>cellspacing</code> and <code>border</code> values to <code>0</code> as these are more consistently controlled by CSS.
 			</p>
 			<pre class="brush: xml;  toolbar: false; gutter: false;">
@@ -107,18 +107,18 @@
 				&lt;/table>
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="accessibilityJqueryWidgets" class="entry">
 			<h2>Use jQuery &amp; jQuery UI Widgets</h2>
 			<p>
-				jQuery and jQuery UI are constructed to look and behave as close to identical as possible on different browsers.
-				jQuery UI is designed to be WAI WCAG 2.0 and WAI ARI compliant, so using the framework removes any uncertainty about plugins or scripts running on your site.
+				jQuery and jQuery UI are constructed to look and behave as close to identical as possible on different browsers. 
+				jQuery UI is designed to be WAI WCAG 2.0 and WAI ARIA compliant, so using the framework removes any uncertainty about plugins or scripts running on your site.
 			</p>
 		</div>
-		<h1>JavaScript</h1>
-		<div class="entry">
+		<h1 id="javascriptSection">JavaScript</h1>
+		<div id="javascriptWhitespace" class="entry">
 			<h2>Whitespacing &amp; Formatting</h2>
 			<p>
-				Any discussion about formatting, whitespacing and the placement of braces is going to be hotly debated. I guess the simplest rule is that, unless you're willing to completely format a whole document, <strong>respect and maintain the formatting of an existing document</strong>.
+				Any discussion about formatting, whitespacing and the placement of braces is going to be hotly debated. I guess the simplest rule is that, unless you're willing to completely format a whole document, <strong>respect and maintain the formatting of an existing document</strong>. 
 				That means: see same-line braces throughout a JS file, continue to write code with same-line braces. Your code should fail the code review process if it doesn't maintain consistency with the rest of the document.
 			</p>
 			<p>
@@ -150,7 +150,7 @@
 					bar();
 				}
 			</pre>
-			<h3>Always Using Parenthesis</h3>
+			<h3>Always Using Braces</h3>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
 				// Bad
 				if (foo)
@@ -195,8 +195,8 @@
 		<div class="entry">
 			<h2>Always Use === Comparison</h2>
 			<p>
-				The use of the == equality operator allows for frustrating bugs to slip through almost undetected. It allows for weak typing that is best explained by <a href="http://bonsaiden.github.com/JavaScript-Garden/#types.equality" target="_blank">Javascript Garden</a>.
-				The use of the strict equality operator === does not run type coercion and therefore strictly evaluates the difference between two objects. Again, consult <a href="http://bonsaiden.github.com/JavaScript-Garden/#types.equality" target="_blank">Javascript Garden</a> for more information
+				The use of the == equality operator allows for frustrating bugs to slip through almost undetected. It allows for weak typing that is best explained by <a href="http://bonsaiden.github.com/JavaScript-Garden/#types.equality" target="_blank">JavaScript Garden</a>.
+				The use of the strict equality operator === does not run type coercion and therefore strictly evaluates the difference between two objects. Again, consult <a href="http://bonsaiden.github.com/JavaScript-Garden/#types.equality" target="_blank">JavaScript Garden</a> for more information
 			</p>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
 				var zeroAsAString = "0";
@@ -221,18 +221,19 @@
 				}
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="javascriptParseInt" class="entry">
 			<h2>Always Specify the Second &lsquo;radix&rsquo; Parameter When Using .parseInt()</h2>
-			<p>When parsing a string to an integer, it is considered good practice to specify the second 'radix' parameter - which determines to what base the string should be converted to. It is, by default, octal/binary - so you will run into some problems.</p>
+			<p>
+				When parsing a string to an integer, it is considered good practice to specify the second 'radix' parameter - which determines to what base the string should be converted to.
+				The default setting will trigger a radix of 16 whenever the string is lead by a <code>0</code>. Most beginner and intermediate users are only ever going to be using a radix of <code>10</code>. Thanks to Jo&atilde;o Moreno for logging the <a href="https://github.com/taitems/Front-End-Development-Guidelines/issues/23" target="_blank">correction</a>.
+			</p>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
 				alert( parseInt("08") ); // alerts: 2
-			</pre>
-			<p>It is suggested you always send a value of <code>10</code>, as base 10 is generally what we'll be using.</p>
-			<pre class="brush: js;  toolbar: false; gutter: false;">
+
 				alert( parseInt("08", 10) ); // alerts: 8
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="javascriptTrueFalse" class="entry">
 			<h2>Avoid Comparing to true and false</h2>
 			<p>Direct comparison to the values of true and false is unnecessary. Sometimes it might be good for clarity, but it's just extra code.</p>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
@@ -249,7 +250,7 @@
 				}
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="javascriptGlobalNamespace" class="entry">
 			<h2>Avoid Polluting the Global Namespace</h2>
 			<p>
 				An over-reliance on global variables is something all of us, myself especially, are guilty of. Arguments as to why globals are bad are fairly straight forward: the chance of script and variable conflicts is increased,
@@ -290,7 +291,7 @@
 				myAppName.settings.settingA; // true
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="javascriptCamelCase" class="entry">
 			<h2>Camel Case Variables</h2>
 			<p>Shouldn't have to explain this one:</p>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
@@ -298,7 +299,7 @@
 				var mouseTimeout = 30; // good :)
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="javascriptMilliseconds" class="entry">
 			<h2>Readable Milliseconds</h2>
 			<p>A handy way of writing milliseconds in a readable format.</p>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
@@ -309,11 +310,11 @@
 				var timeout = 30 * 1000;
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="javascriptLoopCacheArrayLength" class="entry">
 			<h2>Loop Performance - Cache Array Length</h2>
 			<p>Looping is arguably the most important part of JavaScript performance to get right. Shave a millisecond or two off inside of a loop, potentially gain seconds overall. One such way is to cache the length of an array so it doesnt have to be calculated every time the loop is iterated through.</p>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
-				var toLoop = ["1000 items"];
+				var toLoop = new Array(1000);
 
 				for (var i = 0; i &lt; toLoop.length; i++) {
 					// BAD - the length has to be evaluated 1000 times
@@ -326,7 +327,7 @@
 			<h3>The Exception</h3>
 			<p>If you're looping through an array to find an remove a particular item, this will alter the array length. Any time you change the array length by either adding or removing items from inside the loop, you will get yourself into trouble. Consider either re-setting the length or avoid caching it for this particular situation</p>
 		</div>
-		<div class="entry">
+		<div id="javascriptLoopBreakContinue" class="entry">
 			<h2>Loop Performance - Use &lsquo;break;&rsquo; &amp; &lsquo;continue;&rsquo;</h2>
 			<p>The ability to step over and out of loops is really useful in avoiding costly loop cycles.</p>
 			<p>
@@ -334,7 +335,7 @@
 				Do you execute whatever you intend to do, and allow the loop to continue to iterate over the remaining 500 items, knowing that there's no chance it will hit an if statement? Nope! You break out of your loop, literally!
 			</p>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
-				var bigArray = ["1000 items"];
+				var bigArray = new Array(1000);
 
 				for (var i = 0, len = bigArray.length; i &lt; len; i++) {
 					if (i === 500) {
@@ -348,7 +349,7 @@
 				some conditions need to be specifically listened for, to then trigger the skip. Anything that prevent's running through an entire iteration is pretty handy.
 			</p>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
-				var bigArray = ["1000 items"];
+				var bigArray = new Array(1000);
 
 				for (var i = 0, len = bigArray.length; i &lt; len; i++) {
 					if (condition) {
@@ -358,7 +359,7 @@
 				}
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="javascriptFunctionParameters" class="entry">
 			<h2>Don't Send Too Many Function Parameters</h2>
 			<p>This is a pretty bad idea, more for readability than anything:</p>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
@@ -378,7 +379,7 @@
 				});
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="javascriptRemapThis" class="entry">
 			<h2>Remap &lsquo;this&rsquo; to &lsquo;self&rsquo;</h2>
 			<p>
 				When writing object-oriented (OO) JavaScript, the scope of <code>this</code> must be understood. Regardless of what design pattern you choose to structure your pseudo-classes, a reference to <code>this</code> is generally the
@@ -428,7 +429,7 @@
 				}
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="javascriptBooleanNaming" class="entry">
 			<h2>CanIHaz Boolean?</h2>
 			<p>Booleans should be named with the prefixes of <code>is</code>, <code>can</code> or <code>has</code>.</p>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
@@ -441,7 +442,7 @@
 
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="javascriptFeatureSniff" class="entry">
 			<h2>Feature Sniff, Don't Browser Sniff</h2>
 			<p>Does the client's browser support geolocation? Does the client's browser support web workers? HTML5 video? HTML5 audio? The answer used to be:</p>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
@@ -468,10 +469,10 @@
 				if (Modernizr.canvas) { ... }
 			</pre>
 		</div>
-		<h1>jQuery Specific</h1>
-		<div class="entry">
+		<h1 id="jquerySection">jQuery Specific</h1>
+		<div id="jqueryChain" class="entry">
 			<h2>Chain Like a Sick Bitch</h2>
-			<p>One of the best parts of jQuery is it's function chaining. You've probably used it a bit, maybe a few simple calls... but have you ever traversed the DOM like a sick bitch? Take some time to familiarise yourself with the <a href="http://api.jquery.com/end/" target="_blank">.end()</a> function. It is critical for when you begin stepping up and down the DOM tree from your original selector.</p>
+			<p>One of the best parts of jQuery is its function chaining. You've probably used it a bit, maybe a few simple calls... but have you ever traversed the DOM like a sick bitch? Take some time to familiarise yourself with the <a href="http://api.jquery.com/end/" target="_blank">.end()</a> function. It is critical for when you begin stepping up and down the DOM tree from your original selector.</p>
 			<pre class="brush: js;  toolbar: false; gutter: false;">
 				$(".quote")
 					.hide()
@@ -484,7 +485,7 @@
 			back up the DOM to the original object we called. We then load back up and dive back into the DOM.
 			</p>
 		</div>
-		<div class="entry">
+		<div id="jqueryStop" class="entry">
 			<h2>&lsquo;.stop()&rsquo; Collaborate &amp; Listen</h2>
 			<p>
 				Binding jQuery animations to mouse events is a key part of modern web-based user interaction. It's also something that you see done poorly on even the most famous of web sites.
@@ -509,11 +510,11 @@
 			</pre>
 			<p>Tangentially, I find it odd that what I can only assume is an American authored library uses such a profoundly British word as <code>queue</code>.</p>
 		</div>
-		<div class="entry">
+		<div id="jqueryOptimiseSelectors" class="entry">
 			<h2>Optimise Your Selectors</h2>
 			<p>
 				jQuery is pretty chill. It can do pretty much everything but make you coffee, and I hear that's in the roadmap for 2.0. One thing you have to be careful about is abusing the power that is the <a href="http://sizzlejs.com/" target="_blank">sizzleJS</a> selector engine.
-				There are two strategies to overcome this: <em>caching the selectors results</em> and <em>using efficient selectors</em>.
+				There are two strategies to overcome this: <em>caching the selector results</em> and <em>using efficient selectors</em>.
 			</p>
 			<h3>Caching Selector Results</h3>
 			<p>Do a costly DOM query every time you want to change something, or store a reference to the element? Pretty clear choice.</p>
@@ -553,7 +554,7 @@
 				$(".foo",bar);
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="jqueryForEachLoops" class="entry">
 			<h2>A &lsquo;for&rsquo; Loop is Always Quicker Than a &lsquo;each()&rsquo; Loop</h2>
 			<p>
 				No matter what happens in the next few years of browser development, a native <code>for</code> loop will always be quicker than a jQuery <code>$.each()</code> loop.
@@ -566,8 +567,8 @@
 				<li>Loops within loops</li>
 			</ul>
 		</div>
-		<h1>CSS</h1>
-		<div class="entry">
+		<h1 id="cssSection">CSS</h1>
+		<div id="cssWhitespacing" class="entry">
 			<h2>Whitespacing</h2>
 			<p>Whitespacing of CSS can be difficult as we chop and change between single and multi line CSS arguments. I'm not going to get into that.</p>
 			<h3>Proper Spacing</h3>
@@ -610,7 +611,7 @@
 				}
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="cssShorthand" class="entry">
 			<h2>CSS Shorthand</h2>
 			<h3>Grouping Properties</h3>
 			<p>
@@ -631,7 +632,7 @@
 					padding: 1px 2px;
 			</pre>
 			<h3>From 0px to Hero</h3>
-			<p>Assigning a unit type to a properties value of zero is redundant. It is not important to know whether an element should be <code>0px</code> from the left or <code>0 elephants</code> from the left, just that it's bang on the left.</p>
+			<p>Assigning a unit type to a property value of zero is redundant. It is not important to know whether an element should be <code>0px</code> from the left or <code>0 elephants</code> from the left, just that it's bang on the left.</p>
 			<pre class="brush: css;  toolbar: false; gutter: false;">
 					/* BAD */
 					padding: 0px 10px;
@@ -641,10 +642,10 @@
 					padding: 0 10px;
 			</pre>
 		</div>
-		<div class="entry">
-			<h2>Clearing floats</h2>
+		<div id="cssClearingFloats" class="entry">
+			<h2>Clearing Floats</h2>
 			<p>
-				Clearing a <code>&lt;div&gt;</code> used to mean extra DOM, because it involved adding an extra clearer element. The better way is to set a specific width on the parent element (it doesn't work if it's "auto") and an overflow value of either auto or hidden.
+				Clearing a <code>&lt;div&gt;</code> used to mean extra DOM, because it involved adding an extra clearer element. The better way is to set a specific width on the parent element (it doesn't work if it is "auto") and an overflow value of either auto or hidden.
 				"Hidden" obviously degrades better, but there are some IE compatibility versions where auto works better.
 			</p>
 			<h3>The HTML:</h3>
@@ -669,7 +670,7 @@
 				}
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="cssFeatureSniff" class="entry">
 			<h2>Feature Sniff, Don't Browser Sniff</h2>
 			<p>
 				In the earlier discusison of JavaScript feature detection, applying properties if a browser is <em>any version</em> of IE is increasingly problematic.
@@ -689,11 +690,11 @@
 				}
 			</pre>
 		</div>
-		<div class="entry">
+		<div id="cssImportant" class="entry">
 			<h2>You're Not !important</h2>
 			<p>
-				A reliance upon the <code>!important</code> tag is a dangerous thing. The cases that warrent its use are rare and specific. They revolve around the necessity to override another stylesheet which you do not have access or permission to edit.
-				Another scenario is hard coding an element's styles to prevent inline JavaScript styles from taking precedence. Instead <code>!important</code> is used a lazy shortcut to set the priority of your style over another, causing headaches further down the line.
+				A reliance upon the <code>!important</code> tag is a dangerous thing. The cases that warrant its use are rare and specific. They revolve around the necessity to override another stylesheet which you do not have access or permission to edit.
+				Another scenario is hard coding an element's styles to prevent inline JavaScript styles from taking precedence. Instead <code>!important</code> is used as a lazy shortcut to set the priority of your style over another, causing headaches further down the line.
 			</p>
 			<p>
 				The use of the <code>!important</code> tag can be mostly avoided via the better understanding of CSS selector precedence, and how to better target elements. The more specific the selector, the more likely it will be accepted as the applicable style.
@@ -707,7 +708,7 @@
 				<a href="http://www.vanseodesign.com/css/css-specificity-inheritance-cascaade/" target="_blank">Their article</a> on style precedence does a better job explaining inheritence than I ever could, so please give it a go.
 			</p>
 		</div>
-		<div class="entry">
+		<div id="cssDegradation" class="entry">
 			<h2>Aggressive Degredation</h2>
 			<p>It's worth noting that this is a personal opinion, and best suited to very specific situations. The stance of aggressive degradation will not be well received in large commercial projects or enterprise solutions relying upon older browsers.</p>
 			<p>
@@ -719,12 +720,12 @@
 			<p>Put simply, aggressive degradation boils down to: <strong>if your browser can't render a gradient or a box shadow, tough luck</strong>.</p>
 			<p>While not ideal for every situation, it ensures the timely delivery of projects and that the root product is still usable and not reliant on (validation breaking) hacks.</p>
 		</div>
-		<h1>CSS3 &amp; HTML5</h1>
-		<div class="entry">
+		<h1 id="cssHtmlSection">CSS3 &amp; HTML5</h1>
+		<div id="cssHtmlFeatureSniff" class="entry">
 			<h2>Feature Sniff with Modernizr</h2>
 			<p>I think I've gone on enough about this already. Use <a href="http://www.modernizr.com" target="_blank">Modernizr</a> to detect the availability of specific HTML5 and CSS3 features.</p>
 		</div>
-		<div class="entry">
+		<div id="cssHtmlFontFace" class="entry">
 			<h2>@font-face Use and Abuse</h2>
 			<p>
 				Before you consider embedding a custom font, is important that you inspect the <abbr>EULA</abbr> and check if web embedding is allowed. Foundries are understandably reluctant to allow designers and developers
@@ -735,8 +736,8 @@
 				It utilises Fontspring's <a href="http://www.fontspring.com/blog/further-hardening-of-the-bulletproof-syntax" target="_blank">bulletproof @font-face structure</a> and automatically generates all the required file formats.
 			</p>
 		</div>
-		<div class="entry">
-			<h2>Degredation</h2>
+		<div id="cssHtmlDegradation" class="entry">
+			<h2>Degradation</h2>
 			<p>
 				Thankfully browser handling of unsupported HTML5 and CSS3 is already that of a graceful nature. New additions to the list of <code>&lt;input /&gt;</code> types such as "email", "search" etc. will generally
 				degrade to normal <code>&lt;input type="text" /&gt;</code> when not natively supported. Similarly, CSS3 properties that aren't supported will simply not appear. Responsive layouts controlled by height and width
@@ -745,8 +746,8 @@
 			<p><strong>Subtle CSS3 effects should be employed as a reward for users who run a modern browser.</strong></p>
 			<p>The resources section below includes a few libraries to help normalise HTML5 and CSS3 functionality across a range of older browsers.</p>
 		</div>
-		<h1>Resources</h1>
-		<div class="entry">
+		<h1 id="resourcesSection">Resources</h1>
+		<div id="resourcesSupport" class="entry">
 			<h2>Support and Suggestions</h2>
 			<p>The following resources are vital for the standardisation of code and interaction in a modern web page. They ensure that CSS3 and HTML5 features are made accessible across a range of browsers that previously lacked support.</p>
 			<ul>
@@ -784,11 +785,11 @@
 					<a href="http://www.raphaeljs.com" target="_blank">
 						RaphaelJS
 					</a>
-					 easy cross browser canvas drawing
+					 easy cross browser vector drawing
 				</li>
 			</ul>
 		</div>
-		<div class="entry">
+		<div id="resourcesSuggestions" class="entry">
 			<h2>Support and Suggestions</h2>
 			<p>This document was originally prepared by Tait Brown (<a href="http://www.twitter.com/taitems" target="_blank">@taitems</a>).</p>
 			<p>Questions, corrections and suggestions can be lodged on the <a href="https://github.com/ryansully/Front-End-Development-Guidelines/" target="_blank">GitHub repository</a> for this page. You can also fork your own branch and add your own company/product specific guidelines.</p>
